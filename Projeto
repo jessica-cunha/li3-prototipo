@@ -1,0 +1,15 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+
+struct users
+{
+    char *username;     /*username*/
+    char *nome;         /*Nome da pessoa*/
+    char *genero;       /* genero da pessoa*/
+    char *datAniv;      /*data de nascimento*/
+    char *accDate;      /*data de criação da conta*/
+    char *payMethod;    /* método de pagamento*/
+    char *accStatus;    /* estado da conta*/
+}Users
