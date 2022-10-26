@@ -25,7 +25,7 @@ struct drivers {
     char *licence;
 } Drivers;
 
-
+//inserir função que distingue os tokens
 
 int isvalidU (Users u) {
     if (strcmp(u, "active")==0)
