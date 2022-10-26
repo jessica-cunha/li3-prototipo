@@ -5,22 +5,37 @@
 
 struct users {
     char *username;     /*username*/
-    char *nome;         /*Nome da pessoa*/
-    char *genero;       /* genero da pessoa*/
-    char *datAniv;      /*data de nascimento*/
-    char *accDate;      /*data de criação da conta*/
+    char *nomeU;         /*Nome da pessoa*/
+    char *generoU;       /* genero da pessoa*/
+    char *datAnivU;      /*data de nascimento*/
+    char *accDateU;      /*data de criação da conta*/
     char *payMethod;    /* método de pagamento*/
     char *accStatusU;    /* estado da conta*/
 } Users;
 
 struct drivers {
+    int id;
+    char *nomeD;
+    char *generoD;
+    char *datAnivD;
+    char *accDateD;
+    char *carClass;
+    char *accStatusD;
+    char *city;
+    char *licence;
+} Drivers;
 
+
+
+int isvalidU (Users u) {
+    if (strcmp(u, "active")==0)
+        return 1;
+    else
+        return 0;
 }
 
-
-
-int isvalid (Users u) {
-    if (u->accStatusU=="active")
+int isvalidD (Drivers d) {
+    if (strcmp(d, "active")==0)
         return 1;
     else
         return 0;
